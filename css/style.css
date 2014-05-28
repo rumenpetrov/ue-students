@@ -1,0 +1,215 @@
+/* =========================================================================
+	#Reset
+========================================================================= */
+* { margin: 0; padding: 0; outline: 0; }
+
+/* =========================================================================
+	#Base
+========================================================================= */
+html,
+body { height: 100%; }
+
+body { min-width: 1024px; background: #fff; font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 1.3; color: #000; }
+
+a { color: #ff0000; text-decoration: none; cursor: pointer; }
+a {
+	-webkit-transition: all 0.3s; 
+	   -moz-transition: all 0.3s; 
+	    -ms-transition: all 0.3s; 
+	     -o-transition: all 0.3s; 
+	        transition: all 0.3s; 
+}
+a:hover { text-decoration: underline; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { padding-bottom: 8px; line-height: 1; }
+
+h1 { font-size: 33px; }
+h2 { font-size: 31px; }
+h3 { font-size: 26px; }
+h4 { font-size: 23px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+p { padding-bottom: 10px; }
+
+img { border: 0; vertical-align: middle; }
+
+ol,
+ul { list-style-position: inside; }
+
+input,
+select,
+textarea { font-family: 'Raleway', sans-serif; font-size: 16px; line-height: 1.3; color: #000; }
+
+a[class^="btn-"],
+input[type="submit"],
+input[type="button"] { cursor: pointer; }
+textarea { overflow: auto; resize: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* =========================================================================
+	#Helpers
+========================================================================= */
+.alignleft { float: left; }
+.alignright { float: right; }
+
+.clearfix:before,
+.clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* ==========================================================================
+	#General
+========================================================================== */
+.field { height: 30px; padding-right: 10px; border: 2px solid #2489c5; background: #fff; }
+.field input { display: block; width: 100%; padding: 5px; border: 0; background-color: transparent; color: #000; }
+
+.field input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #000;
+}
+.field input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #000;
+}
+.field input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #000;
+}
+.field input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #000;
+}
+
+.select { width: 100%; height: 34px; border: 2px solid #2489c5; background: #fff; }
+
+.cols,
+.form-cols { overflow: hidden; }
+.col,
+.form-col { float: left; }
+
+/* ==========================================================================
+	#Btns
+========================================================================== */
+.btn { display: inline-block; border: 0; vertical-align: middle; background-color: transparent; transition: all 0.3s; }
+.btn:hover { text-decoration: none; }
+
+.btn-black { padding: 7px 10px; background: #2489c5; font-size: 16px; color: #fff; font-weight: 600; }
+.btn-black:hover { background: #fff; color: #000; }
+
+/* =========================================================================
+	#Containers
+========================================================================= */
+.container { position: relative; min-height: 100%; background: #e7f2f9; }
+.shell { width: 984px; margin: 0 auto; }
+
+/* =========================================================================
+	#Header
+========================================================================= */
+.header { position: absolute; top: 0; left: 0; right: 0; z-index: 2; height: 40px; padding: 20px; border-bottom: 2px solid #2489c5; background: #000; }
+
+/* ==========================================================================
+	#Nav
+========================================================================== */
+.nav { float: left; font-size: 0; }
+.nav ul { list-style: none outside none; }
+.nav li { display: inline-block; *display: inline; *zoom: 1; }
+.nav li ~ li { margin-left: 10px; }
+.nav a { display: block; padding: 0 20px; height: 38px; border: 1px solid #fff; background: #000; font-size: 16px; line-height: 38px; color: #fff; font-weight: 700; text-align: center; }
+.nav a:hover { background: #fff; color: #000; text-decoration: none; }
+.nav a em { font-size: 14px; font-weight: 300; }
+
+/* ==========================================================================
+	#Nav Secondary
+========================================================================== */
+.nav-secondary { float: right; font-size: 0; }
+.nav-secondary ul { list-style: none outside none; }
+.nav-secondary li { display: inline-block; *display: inline; *zoom: 1; }
+.nav-secondary li ~ li { margin-left: 10px; }
+.nav-secondary a { display: block; padding: 0 20px; height: 38px; border: 1px solid #2489c5; background: #2489c5; font-size: 16px; line-height: 38px; color: #fff; font-weight: 700; text-align: center; }
+.nav-secondary a:hover { background: #fff; color: #000; text-decoration: none; }
+.nav-secondary a em { font-size: 14px; font-weight: 300; }
+
+/* =========================================================================
+	#Main
+========================================================================= */
+.main { position: relative; z-index: 1; padding: 110px 0; }
+.main-inner { padding: 10px; background: #000; color: #fff; }
+
+/* ==========================================================================
+	#Forms
+========================================================================== */
+.form { padding: 20px; border: 2px solid #2489c5; background: #000 url(images/student.png) 920px 10px no-repeat; color: #fff; }
+.form .form-head { padding-bottom: 10px; text-align: center; }
+.form .form-body { padding: 0 50px; }
+.form .form-foot { padding: 10px 50px 0; text-align: right; }
+.form .form-col { width: 410px; }
+.form .form-col ~ .form-col { margin-left: 20px; }
+
+.form h2 em { font-size: 26px; font-weight: 300; }
+.form .form-row { padding-bottom: 10px; }
+.form .form-label { display: none; padding-bottom: 5px; font-weight: 600; }
+
+.form .btn-black { font-style: italic; }
+
+.form-update .form-group { padding: 20px 0; }
+
+.form-delete { overflow: hidden; }
+.form-delete .form-body { float: left; width: 600px; padding: 0 0 0 50px; }
+.form-delete .form-foot { float: right; padding: 0 50px 0 0; }
+
+/* ==========================================================================
+	#Result
+========================================================================== */
+.result p { padding: 10px; border: 1px solid #2489c5; background: #000; margin-top: 10px; font-size: 20px; color: #2489c5; font-weight: 700; text-align: center; }
+.result p em { font-size: 18px; font-weight: 300; }
+
+/* ==========================================================================
+	#Table Results
+========================================================================== */
+.table-results { padding: 10px 20px; color: #fff; }
+.table-results h2 { text-align: center; }
+.table-results h2 em { font-size: 28px; font-weight: 600; }
+
+.table-results .message { padding: 10px 0 20px; font-size: 18px; color: #2489c5; text-align: right; font-weight: 900; }
+
+.table-results th,
+.table-results td,
+.table-results table { border: 1px solid #2489c5; }
+
+.table-results th { padding: 5px 10px; background: #2489c5; font-size: 17px; }
+.table-results td { padding: 5px 10px; }
+
+/* ==========================================================================
+	#Section
+========================================================================== */
+.section { padding: 10px; }
+.section-head { padding-bottom: 20px; text-align: center; }
+.section-body { padding: 10px 20px; }
+
+.people { list-style: none outside none; }
+.people-item { overflow: hidden; }
+.people-item ~ .people-item { margin-top: 30px; }
+.people-item .photo { float: left; border: 1px solid #2489c5; margin-right: 20px; }
+.people-item .text { overflow: hidden; padding: 10px 0; font-weight: 300; }
+.people-item .text p { font-size: 17px; color: #2489c5; }
+
+/* =========================================================================
+	#Footer
+========================================================================= */
+.footer { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; height: 20px; padding: 20px; border-top: 2px solid #2489c5; background: #000; }
+
+.copyright { float: left; color: #fff; }
+
+/* ==========================================================================
+	#Nav Footer
+========================================================================== */
+.nav-footer { float: right; font-size: 0; }
+.nav-footer ul { overflow: hidden; list-style: none outside none; }
+.nav-footer li { display: inline-block; *display: inline; *zoom: 1; }
+.nav-footer li ~ li { margin-left: 10px; }
+.nav-footer a { display: block; padding: 0 10px; height: 18px; border: 1px solid #fff; background: #000; font-size: 14px; line-height: 18px; color: #fff; font-weight: 600; text-align: center; }
+.nav-footer a:hover { background: #fff; color: #000; text-decoration: none; }
+.nav-footer a em { font-size: 14px; font-weight: 300; }
