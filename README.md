@@ -1,4 +1,4 @@
 UE-Students
 ===========
 
-This is my php school project.
+Moving data in and out of DB with PHP.
